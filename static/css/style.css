@@ -1,0 +1,228 @@
+/*Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global Styles */
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Creepster', serif;
+    font-weight: 400;
+    color: red;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+blockquote {
+    width: 70%;
+    display: block;
+    margin-left: 150px;
+    border-left: red 5px solid;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+cite {
+    font-size: .75em;
+    padding-top: 20px;
+}
+
+p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+    width: 90%;
+    padding-left: 40px;
+}
+
+/* Wrapper Styles */
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: 400;
+    background: white;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.header__image {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+/* Navigation Styles */
+
+.navbar__one {
+    width: 100%;
+    background: black;
+}
+
+.nav__one {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    background: black;
+}
+
+.nav__one a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1em;
+}
+
+.nav__one a:hover {
+    background: white;
+    color: red;
+}
+
+@media all and (max-width: 800px) {
+    .nav__one {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .nav__one {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .nav__one a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0,   0.1);
+    }
+    .nav__one li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+/* Content Main */
+
+.content__main {
+    width: 100%;
+}
+
+.main {
+    float: left;
+    width: 75%;
+}
+
+.sidebar {
+    float: right;
+    width: 25%;
+}
+
+/* Post Styles */
+
+.postlist {
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.post {
+    max-width: 70%;
+    margin: 30px auto;
+    background: white;
+    padding: 10px;
+}
+
+.featured-image {
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    margin-top: 50px;
+    line-height:90%;
+    padding-left: 200px;
+}
+
+.post-date {
+    line-height: 130%;
+    padding-left: 200px;
+}
+
+/* Footer Styles */
+
+.footer {
+    clear: both;
+}

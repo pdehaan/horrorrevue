@@ -6,26 +6,38 @@
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
     <body>
+      <div class="wrapper">
         <header class="header">
-       <img src="/static/images/horrorrevue.png" alt="The Horror Revue">
+       <img class="header__image" src="/static/images/horrorrevue.png" alt="The Horror Revue">
         </header>
-        <nav id="top-navigation">
-          <ul>
+        <nav id="top-navigation" class="navbar__one">
+          <ul class="nav__one">
             <li class="menu-item"><a href="/index.html">Home</a></li>
             <li class="menu-item"><a href="/about/">About</a></li>
             <li class="menu-item"><a href="/posts/">Blog</a></li>
             <li class="menu-item"><a href="/contact/">Contact</a></li>
           </ul>
         </nav>
-        <section>
+        <div class="content__main">
+        <section class="main">
         <section class="postlist">
 
 <ul>
   
+    <li>
+      <strong>
+        <a href="/posts/my-first-post/">Welcome the Horror Revue</a>
+      </strong>
+      -
+      <time datetime="22-10-11">10-11-22</time>
+      -
+     Welcome to The Horror Revue - a blog where I review horror books, movies, and TV shows. I hope you like it here....
+    </li>
+  
 </ul>
 </section>
         </section>
-        <aside>
+        <aside class="sidebar">
           <!-- ./_site/_includes/partials/film-diary.html -->
 
 
@@ -104,6 +116,10 @@
     
 </div>
         </aside>
+        </div>
+        <footer class="footer">
+        </footer>
+        </div>
         <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

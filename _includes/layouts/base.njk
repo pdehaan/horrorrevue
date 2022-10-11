@@ -6,23 +6,29 @@
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
     <body>
+      <div class="wrapper">
         <header class="header">
-       <img src="/static/images/horrorrevue.png" alt="The Horror Revue">
+       <img class="header__image" src="/static/images/horrorrevue.png" alt="The Horror Revue">
         </header>
-        <nav id="top-navigation">
-          <ul>
+        <nav id="top-navigation" class="navbar__one">
+          <ul class="nav__one">
             <li class="menu-item"><a href="/index.html">Home</a></li>
             <li class="menu-item"><a href="/about/">About</a></li>
             <li class="menu-item"><a href="/posts/">Blog</a></li>
             <li class="menu-item"><a href="/contact/">Contact</a></li>
           </ul>
         </nav>
-        <section>
+        <div class="content__main">
+        <section class="main">
         {{ content | safe }}
         </section>
-        <aside>
+        <aside class="sidebar">
           {% include 'partials/film-diary.html' %}
         </aside>
+        </div>
+        <footer class="footer">
+        </footer>
+        </div>
         <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
