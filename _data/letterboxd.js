@@ -3,7 +3,7 @@
 const letterboxd = require('letterboxd');
 
 module.exports = async () => {
-    const itmes = letterboxd('horrorrevue', (error, items) => {
+    const items = letterboxd('horrorrevue', (error, items) => {
         if (error) {
             return console.log(error);
         }

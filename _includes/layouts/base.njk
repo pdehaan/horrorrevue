@@ -20,6 +20,9 @@
         <section>
         {{ content | safe }}
         </section>
+        <aside>
+          {% include 'partials/film-diary.html' %}
+        </aside>
         <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
