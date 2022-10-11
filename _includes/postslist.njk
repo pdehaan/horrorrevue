@@ -1,12 +1,9 @@
 <ul>
   {% for post in postslist %}
     <li>
-      <strong>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </strong>
-      -
-      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      -
+        <a class="postlist__link" href="{{ post.url | url }}">{{ post.data.title }}</a><br>
+
+      <time class="postlist__time" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time><br><br>
      {% excerpt post %}
     </li>
   {% endfor %}

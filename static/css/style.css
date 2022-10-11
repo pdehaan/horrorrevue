@@ -191,7 +191,21 @@ header {
 
 .postlist {
     max-width: 90%;
-    margin: 50px auto;
+    margin: 20px auto;
+}
+
+.postlist__link {
+    color: red;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.postlist__time {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 20px;
 }
 
 .post {
