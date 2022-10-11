@@ -1,0 +1,27 @@
+{
+  "name": "horrorrevue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlibydesign/horrorrevue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlibydesign/horrorrevue/issues"
+  },
+  "homepage": "https://github.com/charlibydesign/horrorrevue#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "letterboxd": "^2.0.0",
+    "luxon": "^3.0.4"
+  }
+}
