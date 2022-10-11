@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+
+<h2 class="post-title">{{ title }}</h2>
+<h3 class="post-date">{{ date | readableDate }}</h3>
+<article class="post">
+<img class="featured-image" src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
+<p>{{ content | safe }}</p>
+</article>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Horror Revuew</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    </head>
+    <body>
+        <header class="header">
+       <img src="/static/images/horrorrevue.png" alt="The Horror Revue">
+        </header>
+        <nav id="top-navigation">
+          <ul>
+            <li class="menu-item"><a href="/index.html">Home</a></li>
+            <li class="menu-item"><a href="/about/">About</a></li>
+            <li class="menu-item"><a href="/posts/">Blog</a></li>
+            <li class="menu-item"><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+        <section>
+        {{ content | safe }}
+        </section>
+        <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+    </body>
+</html>   
