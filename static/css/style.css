@@ -198,6 +198,7 @@ header {
 
 .postlist__link {
     color: red;
+    font-family: 'Creepster', serif;
     text-decoration: none;
     font-size: 50px;
     font-weight: 700;
@@ -208,6 +209,12 @@ header {
     font-size: 20px;
     line-height: 1.5;
     padding-bottom: 20px;
+    font-family: 'Creepster', serif;
+    color: black;
+}
+
+.post__url {
+    text-decoration: none;
 }
 
 .post {

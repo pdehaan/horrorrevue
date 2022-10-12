@@ -2,11 +2,12 @@
 layout: layouts/base.njk
 permalink: /
 ---
-<section class="bloglist">
-{% set postslist = collections.blog %}
-{% for blog in postslist %}
-<h2 class="post__title">{{ blog.data.title }}</h2>
-<h3 class="post__date">{{ blog.data.date | readableDate }}</h3>
-{{ blog.templateContent | safe }}
+<section class="postlist">
+{% set postslist = collections.posts | head(-3) %}
+
+{% for post in postslist | reverse %}
+  <a class="post__url" href="{{ post.url | url }}"><h2>{{ post.data.title }}</h2></a>
+  <h3>{{ post.date | readableDate }}</h3>
+  {{ post.templateContent | safe }}
 {% endfor %}
 </section>
