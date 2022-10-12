@@ -3,9 +3,10 @@ layout: layouts/base.njk
 permalink: /
 ---
 <section class="postlist">
-{% set postslist = collections.posts  | head(-1) %}
-{% for post in postslist | head(-1) %}
-<h2>{{ post.data.title }}</h2>
+{% set postslist = collections.posts %}
+{% for post in postslist %}
+<h2 class="post__title">{{ post.data.title }}</h2>
+<h3 class="post__date">{{ post.data.date | readableDate }}</h3>
 {{ post.templateContent | safe }}
 {% endfor %}
 </section>

@@ -6,15 +6,17 @@
     {% for item in letterboxdItems %}
     <article class="film__entry">
         <a href="{{ item.uri }}" class="film__url">
-            <div class="film__media">
-                <img src="{{ item.film.image.tiny }}"
-                alt="Poster for {{ item.film.title }}"
-                loading="lazy">
-            </div>
             <div class="film__info">
-                <span class="film__title">{{ item.film.title }}<span class="film__rating">{{ item.rating.text }}</span></span>
-                <span class="film__watched-date">{{ item.date.watched }}</span>
+                <img class="movie__poster" src="{{ item.film.image.small }}"
+                alt="Poster for {{ item.film.title }}"
+                loading="lazy" align="left">
+                {{ item.film.title }}<br>
+                {{ item.rating.text }}<br>
+                {{ item.date.watched }}
+                <!-- <span class="film__title">{{ item.film.title }}<span class="film__rating">{{ item.rating.text }}</span></span>
+                <span class="film__watched-date">{{ item.date.watched }}</span> -->
             </div>
+            <br>
         </a>
     </article>
     {% endfor %}

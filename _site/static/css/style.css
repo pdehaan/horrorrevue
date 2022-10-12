@@ -133,7 +133,7 @@ header {
 .nav__one {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
     background: black;
@@ -235,6 +235,79 @@ header {
 .post-date {
     line-height: 130%;
     padding-left: 200px;
+}
+
+.post__title {
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.post__date {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Sidebar Styles */
+
+.author__bio {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+}
+
+.author__photo {
+    height: 50%;
+    width: 50%;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.author__intro {
+    margin-left: 40px;
+}
+
+.author__info {
+    padding-top: 15px;
+}
+
+.horror__fan {
+    color: red;
+}
+
+.bookworm {
+    color: darkgreen;
+}
+
+.web__dev {
+    color: blue;
+}
+
+.metalhead {
+    color: rebeccapurple;
+}
+
+
+/* Film Diary */
+
+.film__entry:first-of-type {
+    border-top: 6px double black;
+}
+
+.film__entry {
+    border-left: 6px double black;
+    border-right: 6px double black;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.film__entry:last-of-type {
+    border-bottom: 6px double black;
+}
+
+.film__entry img {
+    padding-right: 15px;
 }
 
 /* Footer Styles */
