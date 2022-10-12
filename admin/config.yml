@@ -1,13 +1,14 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update
+  branch: master # Branch to update
 media_folder: "_site/static/images"
 public_folder: "/static/images"
 collections:
   - label: "Movie Reviews"
     name: "movies"
-    folder: "/posts/movies"
+    folder: "posts/movies"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: 
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
       - {label: "Title", name: "title", widget: "string"}
@@ -15,8 +16,9 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "TV Show Reviews"
     name: "tv"
-    folder: "/posts/tv"
+    folder: "posts/tv"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
       - {label: "Title", name: "title", widget: "string"}
@@ -24,8 +26,9 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Book Reviews"
     name: "book"
-    folder: "/posts/book"
+    folder: "posts/book"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
       - {label: "Title", name: "title", widget: "string"}
@@ -36,3 +39,8 @@ collections:
     folder: "/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}

@@ -1,9 +1,9 @@
 <ul>
-  {% for post in postslist %}
+  {% for blog in postslist %}
     <li>
-        <a class="postlist__link" href="{{ post.url | url }}">{{ post.data.title }}</a><br>
+        <a class="postlist__link" href="{{ blog.url | url }}">{{ blog.data.title }}</a><br>
 
-      <time class="postlist__time" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time><br><br>
+      <time class="postlist__time" datetime="{{ blog.date | htmlDateString }}">{{ blog.date | readableDate }}</time><br><br>
      {# {% excerpt post %} #}
     </li>
   {% endfor %}

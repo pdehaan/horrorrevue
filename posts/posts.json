@@ -1,8 +1,8 @@
 {
-    "tags": [ "blog",
-             "movies",
-             "tv",
-             "book"
-]
-
+    "tags": [ 
+        "blog",
+        "movies",
+        "tv",
+        "book"
+    ]
 }
