@@ -189,6 +189,19 @@ header {
     width: 25%;
 }
 
+.the__title {
+    line-height: 1.5;
+}
+
+.when__posted {
+    line-height: 1;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.the__post {
+    padding-bottom: 30px;
+}
 /* Post Styles */
 
 .postlist {
@@ -218,30 +231,26 @@ header {
 }
 
 .post {
-    max-width: 70%;
+    max-width: 90%;
     margin: 30px auto;
     background: white;
     padding: 10px;
 }
 
-.featured-image {
-    width: 25%;
-    height: 25%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
+.single__post {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .post-title {
     margin-top: 50px;
     line-height:90%;
-    padding-left: 200px;
+    padding-left: 90px;
 }
 
 .post-date {
     line-height: 130%;
-    padding-left: 200px;
+    padding-left: 90px;
 }
 
 .post__title {
@@ -255,8 +264,33 @@ header {
     font-size: 20px;
 }
 
+/* Movie Review Posts */
+
+.movie__info img {
+height: auto;
+width: auto;
+max-width: 150px;
+max-height: 300px;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.movie__info {
+    border: 3px dashed red;
+    outline: 3px dashed black;
+    outline-offset: 3px;
+    margin-bottom: 40px;
+    min-height: 250px;
+    padding-top: 15px;
+    width: 87%;
+    margin-left: 45px;
+}
+
 /* Sidebar Styles */
 
+.sidebar {
+    margin-top: 20px;
+}
 .author__bio {
     display: flex;
     flex-flow: column wrap;
@@ -279,6 +313,11 @@ header {
     padding-top: 15px;
 }
 
+.author__info a {
+    text-decoration: none;
+    color: deeppink;
+}
+
 .horror__fan {
     color: red;
 }
@@ -298,23 +337,30 @@ header {
 
 /* Film Diary */
 
-.film__entry:first-of-type {
-    border-top: 6px double black;
-}
-
 .film__entry {
-    border-left: 6px double black;
-    border-right: 6px double black;
     padding: 10px;
-    padding-bottom: 30px;
-}
-
-.film__entry:last-of-type {
-    border-bottom: 6px double black;
+    margin: 10px;
 }
 
 .film__entry img {
     padding-right: 15px;
+}
+
+.film__info {
+    padding: 15px 0px 15px 0px;
+}
+
+.film__url {
+    text-decoration: none;
+    font-size: 18px;
+    color: red;
+}
+
+/* About Page Styles */
+
+.hey__charli__heading {
+    margin-left: 30px;
+    margin-bottom: 40px;
 }
 
 /* Footer Styles */
@@ -327,6 +373,7 @@ header {
     line-height: 1.25;
     font-size: 14px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .footer a {

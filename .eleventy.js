@@ -8,18 +8,6 @@ module.exports = function(eleventyConfig) {
     const {
       DateTime
     } = require("luxon");
-
-    // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter("head", (array, n) => {
-    if(!Array.isArray(array) || array.length === 0) {
-      return [];
-    }
-    if( n < 0 ) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
   
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
       eleventyConfig.addFilter('htmlDateString', (dateObj) => {
@@ -52,5 +40,18 @@ module.exports = function(eleventyConfig) {
           .concat("...");
         return excerpt;
       }
+
+      // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("head", (array, n) => {
+    if(!Array.isArray(array) || array.length === 0) {
+      return [];
+    }
+    if( n < 0 ) {
+      return array.slice(n);
+    }
+
+    return array.slice(0, n);
+  });
+  
   };
   
