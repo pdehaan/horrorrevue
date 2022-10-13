@@ -16,7 +16,7 @@ Rating: &#9733;&#9733;&#9734;&#9734;&#9734;
 
 </div>
 
-<﻿h3>Spoiler Alert</h3> - This review contains a few spoilers for the movie, although nothing that really spoils the plot. Read at your own risk.
+Spoiler Alert - This review contains a few spoilers for the movie, although nothing that really spoils the plot. Read at your own risk.
 
 I﻿'m going to come right out and say, I hated this movie. I gave it two stars, which was being generous. It should probably have been a one star movie.
 
