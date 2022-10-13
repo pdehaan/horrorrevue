@@ -4,10 +4,14 @@ title: Cannibal Holocaust - 1980
 description: Movie Review for Cannibal Holocaust - 1980
 date: 2022-10-13T06:00:00.000Z
 ---
-<div class="movie__info">\
-<img class="movie__poster" src="/static/images/cannibalholocaust1980.jpeg" alt="Movie Poster for Cannibal Holocaust - 1980" align="left">\
-Release Year: 1980\
-Director: Ruggero Deodato\
+<div class="movie__info">
+
+<img class="movie__poster" src="/static/images/cannibalholocaust1980.jpeg" alt="Movie Poster for Cannibal Holocaust - 1980" align="left">
+
+Release Year: 1980
+
+Director: Ruggero Deodato
+
 CAN A MOVIE GO TOO FAR?
 
 A New York University professor returns from a rescue mission to the Amazon rainforest with the footage shot by a lost team of documentarians who were making a film about the area's local cannibal tribes.
