@@ -6,13 +6,13 @@ date: 2022-10-21T06:00:00.000Z
 ---
 N﻿early every one of us has a classic horror movie or classic horror movie series/franchise that is near and dear to our hearts. Whether your favorite classic horror movie is John Carpenter's Halloween, Friday the 13th, Wes Craven's A Nightmare on Elm Street, or any other classic horror movie, chances are if it was popular in its day, there has either been a remake of it done or one has been planned. These remakes are often a bone of contention among horror fans and you often read "Hollywood doesn't have an original movie anymore" and "why can't they just stop with the remakes, leave the classics alone". Well, allow me to explain why remakes are done and why it isn't actually a bad thing to make remakes.
 
-## W﻿hy Remakes Are Made
+### Why Remakes Are Made
 
 O﻿ne thing I see a lot of people ask when movies, especially classic horror movies, are scheduled for a remake is "Why don't they make new movies instead of remakes of older movies?". Well, the answer is actually quite simple - older movies have brand recognition. If a movie studio says they're going to do a remake of Pumpkin Head, Puppet Master, or Night of the Living Dead, there is always going to be someone who knows what movie they're talking about. The recognition of the brand is there. Even if younger generations of horror fans haven't seen the original movies, they've probably at least heard of them. 
 
 R﻿emakes allow movie studios to bring older movies back to the forefront of society's minds. It gives them a chance to say "hey, while these other, brand new, movies are in production, check out a new, updated version of a movie that made these new ones possible". On this front, it is a money-making ploy, but it is a good one.
 
-## W﻿hy Remakes Aren't Bad
+### Why Remakes Aren't Bad
 
 S﻿o why aren't remakes bad? Well, think about it. Younger generations might not have seen John Carpenter's Halloween, but they've almost certainly seen Rob Zombie's Halloween. Same with Wes Craven's A Nightmare on Elm Street - the younger generations probably haven't seen it, but they've seen the 2010 remake of it. Remakes introduce younger generations of horror fans to movies that they might not have seen or heard of before. You can bet that someone will educate them that the movie is actually a remake, which may cause the younger generations of horror fans to look for and watch the originals. This could spark an interest in the original movies for these younger fans.
 
