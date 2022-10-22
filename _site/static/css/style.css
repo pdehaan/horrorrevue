@@ -465,4 +465,10 @@ padding-left: 15px;
 .error_page img {
     display: block;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sorry {
+    text-align: center;
 }
