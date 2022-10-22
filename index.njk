@@ -15,3 +15,7 @@ pagination:
 {% endfor %}
 </ul>
 </section>
+<section class="pagination">
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;&lt; Newer Posts</a>{% endif %}
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Older Posts &gt;&gt;</a>{% endif %}
+</section>

@@ -330,6 +330,16 @@ header {
     font-size: 20px;
 }
 
+.pagination {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
 /* Movie Review Posts */
 
 .movie__info img {
