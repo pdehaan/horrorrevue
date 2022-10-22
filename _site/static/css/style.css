@@ -450,3 +450,19 @@ padding-left: 15px;
 .attribution {
     font-size: 12px;
 }
+
+/* 404 Page */
+
+.error_page {
+    margin: 0 auto;
+
+}
+
+.error_page h1 {
+    text-align: center;
+}
+
+.error_page img {
+    display: block;
+    text-align: center;
+}
