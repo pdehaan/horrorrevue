@@ -132,9 +132,57 @@ header {
 .navbar__one {
     width: 100%;
     background: black;
+    height: 50px;
+    margin: 0;
+    z-index: 99;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 .nav__one {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__one li {
+    height: auto;
+    width: 135.8px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 18px/1em 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.nav__one a {
+    padding: 18px 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav__one li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__one li:hover ul {
+    display: block;
+}
+
+.nav_one li ul li {
+    background: black;
+    color: white;
+}
+
+/*.nav__one {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -175,7 +223,7 @@ header {
     .nav__one li:last-of-type a {
         border-bottom: none;
     }
-}
+}*/
 
 /* Content Main */
 
