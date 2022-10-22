@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+pagination:
+    data: collections.movies
+    size: 3
+    reverse: true
+    alias: movielist
+---
+<h2 class="archive__header">Movie Reviews</h2>
+
+<ul>
+{% for movie in movielist %}
+  <li><a class="post__url" href="{{ movie.url | url }}"><h2 class="the__title">{{ movie.data.title }}</h2></a>
+  <h5 class="when__posted">Posted on <span class="why__me">{{ movie.date | readableDate }}</span> - by Charli</h5>
+  <article class="the__post">{{ movie.templateContent | safe }}</article></li>
+{% endfor %}
+</ul>
+
+{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;&lt; Older Posts</a>{% endif %}
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Newer Posts &gt;&gt;</a>{% endif %}
