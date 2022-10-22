@@ -1,13 +1,17 @@
 ---
 layout: layouts/base.njk
-permalink: /
+pagination:
+  data: collections.posts
+  size: 3
+  reverse: true
+  alias: postlist
 ---
 <section class="postlist">
-{% set postslist = collections.posts | head(-3) %}
-
-{% for post in postslist | reverse %}
-  <a class="post__url" href="{{ post.url | url }}"><h2 class="the__title">{{ post.data.title }}</h2></a>
+<ul>
+{% for post in postlist %}
+  <li><a class="post__url" href="{{ post.url | url }}"><h2 class="the__title">{{ post.data.title }}</h2></a>
   <h5 class="when__posted">Posted on <span class="why__me">{{ post.date | readableDate }}</span> - by Charli</h5>
-  <article class="the__post">{{ post.templateContent | safe }}</article>
+  <article class="the__post">{{ post.templateContent | safe }}</article></li>
 {% endfor %}
+</ul>
 </section>
