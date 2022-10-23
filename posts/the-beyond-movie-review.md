@@ -6,7 +6,7 @@ date: 2022-10-11
 tags: posts
 ---
 <div class="movie__info">
-    <img class="movie__poster" src="/static/images/movie/thebeyond1981.webp" width="204" height="300" alt="Movie Poster for The Beyond - 1981" align="left">
+    <img loading="lazy" class="movie__poster" src="/static/images/movie/thebeyond1981.webp" width="204" height="300" alt="Movie Poster for The Beyond - 1981" align="left">
     <span class="film__stuff">Release Year: 1981<br>
     Director: Lucio Fulci<br>
     <p>BEYOND DEATH… BEYOND EVIL… BEYOND THE DREADED GATES OF HELL.</p>

@@ -6,7 +6,7 @@ date: 2022-10-22T06:00:00.000Z
 ---
 <div class="movie__info">
 
-<img class="movie__poster" src="/static/images/movie/halloweenkills2021.webp" alt="Movie Poster for Halloween Kills - 2021" width="189" height="300" align="left">
+<img loading="lazy" class="movie__poster" src="/static/images/movie/halloweenkills2021.webp" alt="Movie Poster for Halloween Kills - 2021" width="189" height="300" align="left">
 
 Release Year: 2021<br>
 

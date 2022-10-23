@@ -6,7 +6,7 @@ date: 2021-05-12T06:00:00.000Z
 ---
 <div class="movie__info">
 
-<img class="movie__poster" src="/static/images/book/chasingtheboogeyman.webp" alt="Book Cover for Chasing the Boogeyman by Richard Chizmar" width="199" height="300" align="left">
+<img loading="lazy" class="movie__poster" src="/static/images/book/chasingtheboogeyman.webp" alt="Book Cover for Chasing the Boogeyman by Richard Chizmar" width="199" height="300" align="left">
 
 Release Year: 2021<br>
 

@@ -6,7 +6,7 @@ date: 2022-10-13T06:00:00.000Z
 ---
 <div class="movie__info">
 
-<img class="movie__poster" src="/static/images/movie/cannibalholocaust1980.webp" alt="Movie Poster for Cannibal Holocaust - 1980" width="200" height="300" align="left">
+<img loading="lazy" class="movie__poster" src="/static/images/movie/cannibalholocaust1980.webp" alt="Movie Poster for Cannibal Holocaust - 1980" width="200" height="300" align="left">
 
 Release Year: 1980
 
