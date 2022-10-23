@@ -7,7 +7,7 @@ date: 2022-10-23T06:00:00.000Z
 
 <div class="movie__info">
 
-<img class="movie__poster" src="/static/images/television/ahsseason1.jpeg" alt="Movie Poster for American Horror Story Season 1" align="left">
+<img class="movie__poster" src="/static/images/television/ahsseason1.webp" width="225" height="300" alt="Movie Poster for American Horror Story Season 1" align="left">
 
 Release Year: 2011<br>
 
