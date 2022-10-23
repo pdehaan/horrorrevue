@@ -11,8 +11,8 @@ pagination:
 
 <ul>
 {% for television in televisionlist %}
-  <li><a class="post__url" href="{{ television.url | url }}"><h2 class="the__title">{{ television.data.title }}</h2></a>
-  <h5 class="when__posted">Posted on <span class="why__me">{{ television.date | readableDate }}</span> - by Charli</h5>
+  <li><a class="post__url" href="{{ television.url | url }}"><h2 tabindex="-1" class="the__title">{{ television.data.title }}</h2></a>
+  <span class="when__posted">Posted on <span class="why__me">{{ television.date | readableDate }}</span> - by Charli</span>
   <article class="the__post">{{ television.templateContent | safe }}</article></li>
 {% endfor %}
 </ul>
@@ -44,3 +44,12 @@ pagination:
 {%- endfor %}
 {% if pagination.href.next %}<a href="{{ pagination.href.next }}">&gt;&gt;</a>{% endif %}
 </section>
+<script>
+  // Assuming this gets called every time new content loads...
+  function onNewPage() {
+    var heading = document.querySelector('h2');
+    heading.focus();
+    // You can also update the page title :)
+    document.title = heading.textContent;
+  }
+</script>

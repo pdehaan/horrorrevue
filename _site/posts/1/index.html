@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>The Horror Revue</title>
         <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
@@ -8,7 +8,7 @@
     <body>
       <div class="wrapper">
         <header role="banner" class="header">
-       <img class="header__image" src="/static/images/horrorrevue.png" alt="The Horror Revue">
+       <h1>The Horror Revue</h1>
         </header>
         <nav role="navigation" id="top-navigation" class="navbar__one">
           <ul class="nav__one">
@@ -25,14 +25,14 @@
             <li class="menu-item"><a href="/credits/">Site Credits</a></li>
           </ul>
         </nav>
-        <div class="content__main">
+        <main class="content__main">
         <section class="main">
         <h2 class="archive__header">Blog</h2>
 
 <ul>
 
-  <li><a class="post__url" href="/posts/2022-10-13-cannibal-holocaust-1980/"><h2 class="the__title">Cannibal Holocaust - 1980</h2></a>
-  <h5 class="when__posted">Posted on <span class="why__me">10-13-22</span> - by Charli</h5>
+  <li><a class="post__url" href="/posts/2022-10-13-cannibal-holocaust-1980/"><h2 tabindex="-1" class="the__title">Cannibal Holocaust - 1980</h2></a>
+  <span> class="when__posted">Posted on <span class="why__me">10-13-22</span> - by Charli</span>
   <article class="the__post"><div class="movie__info">
 <img class="movie__poster" src="/static/images/cannibalholocaust1980.jpeg" alt="Movie Poster for Cannibal Holocaust - 1980" align="left">
 <p>Release Year: 1980</p>
@@ -48,8 +48,8 @@
 <p>I﻿ finished the movie simply because I wasn't about to leave it halfway through the movie, but I definitely won't be watching this one again. I have zero desire to ever see that kind of unnecessary animal cruelty ever again.</p>
 </article></li>
 
-  <li><a class="post__url" href="/posts/the-beyond-movie-review/"><h2 class="the__title">The Beyond - 1981</h2></a>
-  <h5 class="when__posted">Posted on <span class="why__me">10-11-22</span> - by Charli</h5>
+  <li><a class="post__url" href="/posts/the-beyond-movie-review/"><h2 tabindex="-1" class="the__title">The Beyond - 1981</h2></a>
+  <span> class="when__posted">Posted on <span class="why__me">10-11-22</span> - by Charli</span>
   <article class="the__post"><div class="movie__info">
     <img class="movie__poster" src="/static/images/thebeyond1981.jpeg" alt="Movie Poster for The Beyond - 1981" align="left">
     <span class="film__stuff">Release Year: 1981<br>
@@ -64,8 +64,8 @@
 <p>I﻿ gave the movie three stars, which means I'd watch it again, although it wouldn't be my first choice.</p>
 </article></li>
 
-  <li><a class="post__url" href="/posts/my-first-post/"><h2 class="the__title">Welcome to the Horror Revue</h2></a>
-  <h5 class="when__posted">Posted on <span class="why__me">10-11-22</span> - by Charli</h5>
+  <li><a class="post__url" href="/posts/my-first-post/"><h2 tabindex="-1" class="the__title">Welcome to the Horror Revue</h2></a>
+  <span> class="when__posted">Posted on <span class="why__me">10-11-22</span> - by Charli</span>
   <article class="the__post"><p>Welcome to The Horror Revue - a blog where I review horror books, movies, and TV shows. I've always been a fan of horror movies, books, and TV shows. I remember watching &quot;Tales from the Dark Side&quot; late at night on Saturday nights with my sister and her friend. To me, they weren't particularly scary but they could be unsettling. Another show we liked to watch was Friday the 13th - the series. If you know, you know.</p>
 <p>Fast forward a few years, and I was watching horror flicks like Nightmare on Elm Street, Friday the 13th, and Halloween with my friends. All through my teen years, my mom would buy me horror novels while she bought herself romance novels at our local used bookstore. So my love of horror has been with me for a long time.</p>
 <p>S﻿o now that you know a little background... welcome to the circus!</p>
@@ -77,6 +77,15 @@
   <a href="/posts/">&lt;&lt;</a><a class="pagination_item" href="/posts/">1</a><strong><a class="pagination_item" href="/posts/1/">2</a></strong>
 
 </section>
+<script>
+  // Assuming this gets called every time new content loads...
+  function onNewPage() {
+    var heading = document.querySelector('h2');
+    heading.focus();
+    // You can also update the page title :)
+    document.title = heading.textContent;
+  }
+</script>
         </section>
         <aside role="complementary" class="sidebar">
           <article class="author__bio">
@@ -163,7 +172,7 @@
     
 </div>
         </aside>
-        </div>
+        </main>
         <footer role="contentinfo" class="footer">
         &copy; 2022 Charity Gamble<br>
         Built with <a href="https://11ty.dev">11ty &amp; <a href="https://netlifycms.org">Netlify CMS</a>. 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>The Horror Revue</title>
         <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
@@ -8,7 +8,7 @@
     <body>
       <div class="wrapper">
         <header role="banner" class="header">
-       <img class="header__image" src="/static/images/horrorrevue.png" alt="The Horror Revue">
+       <h1>The Horror Revue</h1>
         </header>
         <nav role="navigation" id="top-navigation" class="navbar__one">
           <ul class="nav__one">
@@ -25,14 +25,14 @@
             <li class="menu-item"><a href="/credits/">Site Credits</a></li>
           </ul>
         </nav>
-        <div class="content__main">
+        <main class="content__main">
         <section class="main">
         <h2 class="archive__header">Movie Reviews</h2>
 
 <ul>
 
-  <li><a class="post__url" href="/movies/2022-10-22-halloween-kills-2021/"><h2 class="the__title">Halloween Kills - 2021</h2></a>
-  <h5 class="when__posted">Posted on <span class="why__me">10-22-22</span> - by Charli</h5>
+  <li><a class="post__url" href="/movies/2022-10-22-halloween-kills-2021/"><h2 tabindex="-1">class="the__title">Halloween Kills - 2021</h2></a>
+  <span class="when__posted">Posted on <span class="why__me">10-22-22</span> - by Charli</span>
   <article class="the__post"><div class="movie__info">
 <img class="movie__poster" src="/static/images/halloweenkills2021.jpeg" alt="Movie Poster for Halloween Kills - 2021" align="left">
 <p>Release Year: 2021<br></p>
@@ -56,6 +56,15 @@
   <strong><a class="pagination_item" href="/movies/">1</a></strong>
 
 </section>
+<script>
+  // Assuming this gets called every time new content loads...
+  function onNewPage() {
+    var heading = document.querySelector('h2');
+    heading.focus();
+    // You can also update the page title :)
+    document.title = heading.textContent;
+  }
+</script>
         </section>
         <aside role="complementary" class="sidebar">
           <article class="author__bio">
@@ -142,7 +151,7 @@
     
 </div>
         </aside>
-        </div>
+        </main>
         <footer role="contentinfo" class="footer">
         &copy; 2022 Charity Gamble<br>
         Built with <a href="https://11ty.dev">11ty &amp; <a href="https://netlifycms.org">Netlify CMS</a>. 

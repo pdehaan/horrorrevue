@@ -54,12 +54,13 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.25;
     font-size: 16px;
+    color: black;
 }
 
 h1, h2, h3 {
     font-family: 'Creepster', serif;
     font-weight: 400;
-    color: red;
+    color: rebeccapurple;
 }
 
 h1 {
@@ -78,7 +79,7 @@ blockquote {
     width: 70%;
     display: block;
     margin-left: 150px;
-    border-left: red 5px solid;
+    border-left: rebeccapurple 5px solid;
     padding-left: 15px;
     margin-bottom: 15px;
     line-height: 1.5;
@@ -121,10 +122,9 @@ header {
     display: flex;
 }
 
-.header__image {
-    height: 100%;
-    width: 100%;
-    margin: auto;
+header h1 {
+    font-size: 6.25em;
+    margin: 0 auto;
 }
 
 /* Navigation Styles */
@@ -164,6 +164,18 @@ header {
     text-decoration: none;
     color: white;
     display: block;
+}
+
+.nav__one a:active {
+    color: rebeccapurple;
+}
+
+.nav__one a:hover {
+    color: mediumpurple;
+}
+
+.nav__one a:visited {
+    color: lightgray;
 }
 
 .nav__one li ul {
@@ -276,7 +288,7 @@ header {
 }
 
 .postlist__link {
-    color: red;
+    color: rebeccapurple;
     font-family: 'Creepster', serif;
     text-decoration: none;
     font-size: 50px;
@@ -338,7 +350,7 @@ header {
 
 .pagination a {
     text-decoration: none;
-    color: red;
+    color: rebeccapurple;
 }
 
 
@@ -354,7 +366,7 @@ padding-left: 15px;
 }
 
 .movie__info {
-    border: 3px dashed red;
+    border: 3px dashed rebeccapurple;
     outline: 3px dashed black;
     outline-offset: 3px;
     margin-bottom: 40px;
@@ -397,7 +409,7 @@ padding-left: 15px;
 }
 
 .horror__fan {
-    color: red;
+    color: rebeccapurple;
 }
 
 .bookworm {
@@ -431,7 +443,7 @@ padding-left: 15px;
 .film__url {
     text-decoration: none;
     font-size: 18px;
-    color: red;
+    color: rebeccapurple;
 }
 
 /* About Page Styles */
@@ -455,7 +467,7 @@ padding-left: 15px;
 }
 
 .footer a {
-    color: red;
+    color: mediumpurple;
     text-decoration: none;
 }
 
