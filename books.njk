@@ -1,18 +1,18 @@
 ---
 layout: layouts/base.njk
 pagination:
-    data: collections.movies
+    data: collections.books
     size: 3
     reverse: true
-    alias: movielist
+    alias: booklist
 ---
-<h2 class="archive__header">Movie Reviews</h2>
+<h2 class="archive__header">Book Reviews</h2>
 
 <ul>
-{% for movie in movielist %}
-  <li><a class="post__url" href="{{ movie.url | url }}"><h2 class="the__title">{{ movie.data.title }}</h2></a>
-  <h5 class="when__posted">Posted on <span class="why__me">{{ movie.date | readableDate }}</span> - by Charli</h5>
-  <article class="the__post">{{ movie.templateContent | safe }}</article></li>
+{% for book in booklist %}
+  <li><a class="post__url" href="{{ book.url | url }}"><h2 class="the__title">{{ book.data.title }}</h2></a>
+  <h5 class="when__posted">Posted on <span class="why__me">{{ book.date | readableDate }}</span> - by Charli</h5>
+  <article class="the__post">{{ book.templateContent | safe }}</article></li>
 {% endfor %}
 </ul>
 

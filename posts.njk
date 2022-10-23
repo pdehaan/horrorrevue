@@ -16,5 +16,30 @@ pagination:
 {% endfor %}
 </ul>
 
-{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;&lt; Older Posts</a>{% endif %}
-{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Newer Posts &gt;&gt;</a>{% endif %}
+<section class="pagination">
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;&lt;</a>{% endif %}
+  {%- for pageUrl in pagination.hrefs %}
+  {%- set isCurrentPage = pagination.pageNumber == loop.index0 -%}
+  {%- if isCurrentPage %}<strong>{%- endif %}
+
+  {%- if isCurrentPage 
+  or loop.first 
+  or loop.last
+  or pagination.pageNumber in [loop.index0-1, loop.index0+1] -%}
+
+    {%- if loop.last and pagination.pageNumber < (loop.length - 3) -%}
+      ...
+    {%- endif -%}
+
+    <a class="pagination_item" href="{{ pageUrl }}">{{ loop.index }}</a>
+
+    {%- if loop.first and pagination.pageNumber > 2 -%}
+      ...
+    {%- endif -%}
+
+  {%- endif -%}
+  
+  {%- if isCurrentPage %}</strong>{%- endif %}
+{%- endfor %}
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&gt;&gt;</a>{% endif %}
+</section>

@@ -332,13 +332,15 @@ header {
 
 .pagination {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    gap: 10px;
+    justify-content: center;
 }
 
 .pagination a {
     text-decoration: none;
+    color: red;
 }
+
 
 /* Movie Review Posts */
 
