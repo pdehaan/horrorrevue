@@ -17,7 +17,7 @@ pagination:
 </ul>
 
 <section class="pagination">
-  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt;&lt;</a>{% endif %}
+  {% if pagination.href.previous %}<a class="pagination__link" href="{{ pagination.href.previous }}">&lt;&lt;</a>{% endif %}
   {%- for pageUrl in pagination.hrefs %}
   {%- set isCurrentPage = pagination.pageNumber == loop.index0 -%}
   {%- if isCurrentPage %}<strong>{%- endif %}
@@ -31,7 +31,7 @@ pagination:
       ...
     {%- endif -%}
 
-    <a class="pagination_item" href="{{ pageUrl }}">{{ loop.index }}</a>
+    <a class="pagination__link" href="{{ pageUrl }}">{{ loop.index }}</a>
 
     {%- if loop.first and pagination.pageNumber > 2 -%}
       ...
@@ -41,7 +41,7 @@ pagination:
   
   {%- if isCurrentPage %}</strong>{%- endif %}
 {%- endfor %}
-{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&gt;&gt;</a>{% endif %}
+{% if pagination.href.next %}<a class="pagination__link" href="{{ pagination.href.next }}">&gt;&gt;</a>{% endif %}
 </section>
 
 <script>

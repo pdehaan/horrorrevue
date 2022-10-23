@@ -344,13 +344,23 @@ header h1 {
 
 .pagination {
     display: flex;
-    gap: 10px;
+    gap: 2em;
     justify-content: center;
 }
 
 .pagination a {
     text-decoration: none;
     color: rebeccapurple;
+}
+
+.pagination__link {
+    font-size: 1em;
+}
+
+@media (max-width: 640px) {
+    .pagination__link {
+        font-size: 3em;
+    }
 }
 
 
@@ -422,6 +432,12 @@ padding-left: 15px;
 
 .metalhead {
     color: rebeccapurple;
+}
+
+@media (max-width: 640px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 
