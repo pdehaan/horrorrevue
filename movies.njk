@@ -11,7 +11,7 @@ pagination:
 
 <ul>
 {% for movie in movielist %}
-  <li><a class="post__url" href="{{ movie.url | url }}"><h2 tabindex="-1">class="the__title">{{ movie.data.title }}</h2></a>
+  <li><a class="post__url" href="{{ movie.url | url }}"><h2 tabindex="-1" class="the__title">{{ movie.data.title }}</h2></a>
   <span class="when__posted">Posted on <span class="why__me">{{ movie.date | readableDate }}</span> - by Charli</span>
   <article class="the__post">{{ movie.templateContent | safe }}</article></li>
 {% endfor %}
