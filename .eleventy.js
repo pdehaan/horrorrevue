@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
         const content = article.templateContent;
       
         excerpt = striptags(content)
-          .substring(0, 300) // Cap at 200 characters
+          .substring(0, 300) // Cap at 300 characters
           .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
           .trim()
           .concat("...");
@@ -56,7 +56,6 @@ module.exports = function(eleventyConfig) {
   const fs = require("fs");
 const NOT_FOUND_PATH = "_site/404.html";
 
-module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, bs) {
@@ -76,7 +75,6 @@ module.exports = function(eleventyConfig) {
       }
     }
   });
-};
   
   };
   
